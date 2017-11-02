@@ -1,0 +1,17 @@
+<h2>User Details</h2>
+<mat-card class="example-card" *ngIf="user">
+    <mat-card-header>
+      <div mat-card-avatar class="example-header-image"></div>
+      <mat-card-title>{{user.name}}</mat-card-title>
+    </mat-card-header>
+    <img mat-card-image src="{{user.avatar_url}}" alt="Photo of a Shiba Inu">
+    <mat-card-content>
+      <p>
+       Email:{{user.email}}
+      </p>
+      <p>
+          Followers:{{user.followers}}
+         </p>
+    </mat-card-content>
+    
+  </mat-card>
